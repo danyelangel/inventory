@@ -1,0 +1,21 @@
+section(layout="row", flex, style="height: 100vh")
+  md-sidenav(md-theme="blue",
+  class="md-sidenav-left",
+  md-component-id="left",
+  md-is-locked-open="$mdMedia('gt-sm')",
+  md-whiteframe="4",
+  layout="column")
+    md-toolbar(layout="row", layout-align="center center", md-whiteframe="3")
+      div(class="md-toolbar-tools")
+        h2|Iluminación Jaime Dussan
+    menu-el(flex)
+    md-subheader
+      div(layout="row" layout-align="center")
+        span(style="line-height:24px")
+          |Daniel Ángel&nbsp;
+        i(class="material-icons" style="font-size: 14px;line-height: 24px;")|copyright
+        span(style="line-height:24px")
+          |&nbsp;2016
+  section(layout="column", flex, style="height: 100vh")
+    ng-transclude
+        

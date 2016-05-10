@@ -1,0 +1,18 @@
+md-toolbar(md-whiteframe="4", ng-class="{'md-talll':showFilters}", md-theme="blue")
+  div(class="md-toolbar-tools" md-theme="blue")
+    md-button(
+    md-theme="dark"
+    hide-gt-sm
+    class="md-icon-button",
+    ng-click="$ctrl.showSidenav()")
+      i(class="material-icons")|menu
+      md-tooltip(md-direction="right")|Men&uacute;
+    h3 Inventario
+    div(flex)
+    md-button(
+    class="md-icon-button",
+    ng-click="showFilters=!showFilters")
+      i(class="material-icons")|{{showFilters?'expand_less':'filter_list'}}
+      md-tooltip(md-direction="left")|{{showFilters?'Ocultar':'Mostrar'}} Filtros
+md-subheader(ng-show="showFilters", style="z-index:1", md-whiteframe="2")
+  inv-filters

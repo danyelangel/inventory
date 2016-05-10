@@ -1,0 +1,13 @@
+.logo {
+  max-height: 100%;
+  max-width: 200px;
+  margin-bottom: 2em;
+}
+main-el {
+  ng-transclude {
+    height: 100vh;
+    div[ui-view] {
+      height: 100vh
+    }
+  }
+}

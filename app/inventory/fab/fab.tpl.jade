@@ -1,0 +1,30 @@
+md-fab-speed-dial(
+md-theme="blue"
+md-direction="up", 
+class="md-scale md-fab-bottom-right"
+md-open="fabHover"
+ng-mouseenter="fabHover=true" 
+ng-mouseleave="fabHover=false")
+  md-fab-trigger
+    md-button(md-whiteframe="10"
+    aria-label="menu" 
+    class="md-fab md-primary md-icon-button")
+      md-tooltip(md-direction="left")|A&ntilde;adir equipo
+      i(class="material-icons")|add
+  md-fab-actions(md-theme="blue")
+    div(layout-padding)
+      md-button(
+      aria-label="" 
+      class="md-fab md-raised md-mini md-primary md-icon-button")
+        md-tooltip(
+        md-direction="left"
+        md-autohide="false")|Locaci&oacute;n
+        i(class="material-icons")|place
+    div(layout-padding)
+      md-button(
+      aria-label="" 
+      class="md-fab md-raised md-mini md-primary md-icon-button")
+        md-tooltip(
+        md-direction="left"
+        md-autohide="false")|Categor&iacute;a
+        i(class="material-icons")|local_offer

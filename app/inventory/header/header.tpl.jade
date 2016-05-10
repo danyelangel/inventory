@@ -1,0 +1,43 @@
+md-subheader(md-theme="blue", class="md-primary")
+  div(layout="row", class="table-header", flex)
+    div(flex="10")
+      span|#
+        md-tooltip(md-direction="right")|Cantidad
+    
+    // Equipment
+    div(
+    flex="30",  
+    layout="row", 
+    class="table-heading")
+      span(ng-click="$ctrl.setOrder('equipment')")|Referencia
+      i(class="material-icons" 
+      ng-show="$ctrl.sortBy === 'equipment'")
+        |arrow_drop_{{$ctrl.isAscending?'down':'up'}}
+        
+    // Equipment
+    div(
+    flex="20",  
+    layout="row", 
+    class="table-heading")
+      span(ng-click="$ctrl.setOrder('equipment')")|Marca
+      i(class="material-icons" 
+      ng-show="$ctrl.sortBy === 'equipment'")
+        |arrow_drop_{{$ctrl.isAscending?'down':'up'}}
+      
+    // Category
+    div(flex="20", 
+    layout="row", 
+    class="table-heading")
+      span(ng-click="$ctrl.setOrder('category')")|Categor&iacute;a
+      i(class="material-icons" 
+      ng-show="$ctrl.sortBy === 'category'")
+        |arrow_drop_{{$ctrl.isAscending?'down':'up'}}
+        
+    // Mainenance
+    div(flex="20", 
+    layout="row", 
+    class="table-heading")
+      span(ng-click="$ctrl.setOrder('maintenance')")|Fecha de Mantenimiento
+      i(class="material-icons" 
+      ng-show="$ctrl.sortBy === 'maintenance'")
+        |arrow_drop_{{$ctrl.isAscending?'down':'up'}}

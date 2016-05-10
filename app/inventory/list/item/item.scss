@@ -1,0 +1,13 @@
+inv-item {
+  .editable {
+    color: #616161;
+  }
+  .editable:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  span {
+    font-weight: 500;
+    color: #1976D2;
+  }
+}

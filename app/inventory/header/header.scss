@@ -1,0 +1,15 @@
+inv-header{
+  .table-heading span, .table-heading {
+    line-height: 1em;
+  }
+  .table-heading > span:focus {
+    outline: none;
+  }
+  .table-heading > span:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+  i.material-icons {
+    line-height: 14px;
+  }
+}
